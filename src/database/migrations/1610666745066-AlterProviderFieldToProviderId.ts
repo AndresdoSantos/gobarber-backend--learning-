@@ -22,10 +22,10 @@ export default class AlterProviderFieldToProviderId1610666745066
       'appointments',
       new TableForeignKey({
         name: 'AppointmentProvider',
-        columnNames: ['provdier_id'],
+        columnNames: ['provider_id'],
         referencedColumnNames: ['id'],
         referencedTableName: 'users',
-        onDelete: 'SET_NULL',
+        onDelete: 'SET NULL',
         onUpdate: 'CASCADE',
       }),
     );

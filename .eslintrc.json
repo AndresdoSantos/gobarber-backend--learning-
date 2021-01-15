@@ -21,6 +21,7 @@
     "rules": {
       "prettier/prettier": "error",
       "class-methods-use-this": "off",
+      "@typescript-eslint/ban-ts-comment": "warn",
       "camelcase": "off",
       "import/extensions": [
         "error",

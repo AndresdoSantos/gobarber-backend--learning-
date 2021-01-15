@@ -5,6 +5,8 @@ import {
   PrimaryGeneratedColumn,
   ManyToOne,
   JoinColumn,
+  UpdateDateColumn,
+  CreateDateColumn,
 } from 'typeorm';
 
 import User from './User';
@@ -23,6 +25,12 @@ class Appointment {
 
   @Column('timestamp with time zone')
   date: Date;
+
+  @CreateDateColumn()
+  created_at: Date;
+
+  @UpdateDateColumn()
+  updated_at: Date;
 }
 
 export default Appointment;
