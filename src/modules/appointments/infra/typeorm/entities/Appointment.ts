@@ -9,7 +9,7 @@ import {
   CreateDateColumn,
 } from 'typeorm';
 
-import User from '@modules/users/infra/typeorm/entities/User';
+import User from '../../../../users/infra/typeorm/entities/User';
 
 @Entity('appointments')
 class Appointment {

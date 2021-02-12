@@ -1,7 +1,8 @@
 {
     "env": {
         "es2021": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": [
         "airbnb-base",
@@ -19,6 +20,7 @@
         "prettier"
     ],
     "rules": {
+      "import/no-extraneous-dependencies": "off",
       "prettier/prettier": "error",
       "class-methods-use-this": "off",
       "@typescript-eslint/ban-ts-comment": "warn",
@@ -26,8 +28,9 @@
       "camelcase": "off",
       "@typescript-eslint/interface-name-prefix": ["off", { "prefixWithI": "always" }],
       "no-useless-constructor": "off",
+      "import/no-unresolved": "off",
       "import/extensions": [
-        "error",
+        "off",
         "ignorePackages",
         {
           "ts": "never"
